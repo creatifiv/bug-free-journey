@@ -42,6 +42,8 @@ class SelectCoinViewController: UITableViewController{
     "Israel",
     ]
     
+    var flag = ["us.png", "de.png", "ca.png", "uk.png", "se.png", "au.png", "jp.png", "fr.png", "nz.png", "au.png", "it.png", "lu.png", "sg.png", "es.png", "ch.png"]
+    
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         
@@ -50,9 +52,10 @@ class SelectCoinViewController: UITableViewController{
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CoinTableViewCell
         
-        cell.textLabel!.text = coins[indexPath.row]
+        cell.country!.text = coins[indexPath.row]
+        cell.countryFlag!.image = UIImage(named: flag[0])
         
         return cell
         
