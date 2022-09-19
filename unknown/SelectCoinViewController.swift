@@ -13,7 +13,34 @@ class SelectCoinViewController: UITableViewController{
         super.viewDidLoad()
     }
     
-    var coins = ["USA", "Germany"]
+    var coins = [
+    
+    "United States of America",
+    "Germany",
+    "Canada",
+    "United Kingdom",
+    "Sweden",
+    "Australia",
+    "Japan",
+    "France",
+    "Netherlands",
+    "Denmark",
+    "New Zealand",
+    "Austria",
+    "Italy",
+    "Luxembourg",
+    "Singapore",
+    "Spain",
+    "China",
+    "Ireland",
+    "South Korea",
+    "Brazil",
+    "Thailand",
+    "India",
+    "Portugal",
+    "Russia",
+    "Israel",
+    ]
     
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
@@ -25,7 +52,7 @@ class SelectCoinViewController: UITableViewController{
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         
-        cell.textLabel!.text = "Row \(indexPath.row)"
+        cell.textLabel!.text = coins[indexPath.row]
         
         return cell
         
