@@ -7,12 +7,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class CoinViewController: UIViewController, CoinDelegate{
+   
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         image.image = UIImage(named: "img2.png")
+        let vc = SelectCoinViewController()
+        vc.coinDelegate = self
     }
     
     var images = ["head2.png", "tails2.png"]
@@ -39,6 +43,18 @@ class ViewController: UIViewController {
     
     @IBAction func unwindToCoinFlip(unwindSegue: UIStoryboardSegue) {
         
+       
+        
     }
+    
+    func getCoin(coin: Coin) {
+        images[0] = coin.heads
+        images[1] = coin.tails
+        
+        print("qwertyuiop")
+    }
+    
+    
 }
+
 
