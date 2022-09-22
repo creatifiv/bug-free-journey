@@ -61,7 +61,7 @@
                                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </buttonConfiguration>
                                                 <connections>
-                                                    <segue destination="2nW-p7-9Vp" kind="show" id="vfI-1w-bDV"/>
+                                                    <action selector="changeCoin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wph-hA-7cw"/>
                                                 </connections>
                                             </button>
                                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -96,7 +96,7 @@
         <!--Select Coin View Controller-->
         <scene sceneID="aa3-2j-pbr">
             <objects>
-                <tableViewController id="2nW-p7-9Vp" customClass="SelectCoinViewController" customModule="unknown" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="selectCoin" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2nW-p7-9Vp" customClass="SelectCoinViewController" customModule="unknown" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="82" estimatedRowHeight="-1" sectionHeaderHeight="40" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="EXj-4D-PyB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

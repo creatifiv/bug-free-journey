@@ -50,7 +50,7 @@ class SelectCoinViewController: UITableViewController{
     
     var flag = ["us.png", "de.png", "ca.png", "uk.png", "se.png", "au.png", "jp.png", "fr.png", "nz.png","dk.png", "nz.png", "at.png", "it.png", "lu.png", "sg.png", "es.png", "cn.png", "ie.png", "kr.png", "br.png", "th.png", "in.png", "pt.png", "ru.png", "il.png"]
     
-    var coins = ["us.png", "de.png"]
+    var coins:[String] = [String]()
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
         
@@ -69,6 +69,7 @@ class SelectCoinViewController: UITableViewController{
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
         
         let newCoin = Coin(heads: coins[0] , tails: coins[1])
         coinDelegate?.getCoin(coin: newCoin)
