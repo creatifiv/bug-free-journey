@@ -25,10 +25,12 @@ class CoinViewController: UIViewController, CoinDelegate{
     @IBOutlet weak var status: UILabel!
     @IBOutlet weak var coinButton: UIButton!
     
+    //MARK: Select new coin view controller
     @IBAction func changeCoin(_ sender: UIButton) {
         let coinVC = storyboard?.instantiateViewController(withIdentifier: "selectCoin") as! SelectCoinViewController
         coinVC.coinDelegate = self
         present(coinVC, animated: true, completion: nil)
+        image.image = UIImage(named: "img2.png")
     }
     
     func changeImage(){
