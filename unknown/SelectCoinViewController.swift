@@ -30,6 +30,7 @@ class SelectCoinViewController: UITableViewController{
     "Canada",
     "Austrailia",
     "Japan",
+    /*
     "united Kingdom",
     "Sweden",
     "France",
@@ -49,10 +50,10 @@ class SelectCoinViewController: UITableViewController{
     "India",
     "Portugal",
     "Russia",
-    "Israel",
+    "Israel", */
     ]
     
-    var flag = ["us.png", "de.png", "ca.png", "au.png", "jp.png", "uk.png", "se.png", "fr.png", "nz.png","dk.png", "nz.png", "at.png", "it.png", "lu.png", "sg.png", "es.png", "cn.png", "ie.png", "kr.png", "br.png", "th.png", "in.png", "pt.png", "ru.png", "il.png"]
+    var flag = ["us.png", "de.png", "ca.png", "au.png", "jp.png", /*"uk.png", "se.png", "fr.png", "nz.png","dk.png", "nz.png", "at.png", "it.png", "lu.png", "sg.png", "es.png", "cn.png", "ie.png", "kr.png", "br.png", "th.png", "in.png", "pt.png", "ru.png", "il.png"*/]
     
     let coin1 = Coin(heads: "us_front.png", tails: "us_back.png")
     let coin2 = Coin(heads: "de_front.png", tails: "de_back.png")

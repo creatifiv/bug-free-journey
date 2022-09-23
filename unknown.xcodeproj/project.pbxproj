@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		5781E75328DB9D6B00E20A23 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5781E75228DB9D6B00E20A23 /* Coin.swift */; };
+		57DC70D028DE076000A2517E /* BungeeShade-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 57DC70CF28DE071300A2517E /* BungeeShade-Regular.ttf */; };
 		6F53B7BE28D8591400A54B85 /* SelectCoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F53B7BD28D8591400A54B85 /* SelectCoinViewController.swift */; };
 		6F53B7C028D8C90400A54B85 /* CoinTableVIewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F53B7BF28D8C90400A54B85 /* CoinTableVIewCell.swift */; };
 		6F76FA1228D627E100E13A14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F76FA1128D627E100E13A14 /* AppDelegate.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		5781E75228DB9D6B00E20A23 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		57DC70CF28DE071300A2517E /* BungeeShade-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BungeeShade-Regular.ttf"; sourceTree = "<group>"; };
 		6F53B7BD28D8591400A54B85 /* SelectCoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectCoinViewController.swift; sourceTree = "<group>"; };
 		6F53B7BF28D8C90400A54B85 /* CoinTableVIewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinTableVIewCell.swift; sourceTree = "<group>"; };
 		6F76FA0E28D627E100E13A14 /* unknown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = unknown.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,6 +45,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		57DC70CE28DE070B00A2517E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		6F76FA0528D627E100E13A14 = {
 			isa = PBXGroup;
 			children = (
@@ -69,6 +78,8 @@
 				6F76FA1728D627E100E13A14 /* Main.storyboard */,
 				6F76FA1528D627E100E13A14 /* CoinViewController.swift */,
 				6F53B7BD28D8591400A54B85 /* SelectCoinViewController.swift */,
+				57DC70CF28DE071300A2517E /* BungeeShade-Regular.ttf */,
+				57DC70CE28DE070B00A2517E /* Fonts */,
 				6F76FA1A28D627E200E13A14 /* Assets.xcassets */,
 				6F76FA1C28D627E200E13A14 /* LaunchScreen.storyboard */,
 				6F76FA1F28D627E200E13A14 /* Info.plist */,
@@ -135,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F76FA1E28D627E200E13A14 /* LaunchScreen.storyboard in Resources */,
+				57DC70D028DE076000A2517E /* BungeeShade-Regular.ttf in Resources */,
 				6F76FA1B28D627E200E13A14 /* Assets.xcassets in Resources */,
 				6F76FA1928D627E100E13A14 /* Main.storyboard in Resources */,
 			);

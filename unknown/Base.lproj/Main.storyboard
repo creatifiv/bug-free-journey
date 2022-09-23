@@ -50,31 +50,31 @@
                                     </navigationBar>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="77" translatesAutoresizingMaskIntoConstraints="NO" id="SBR-1B-6tH">
-                                <rect key="frame" x="20" y="161" width="374" height="574"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="141" translatesAutoresizingMaskIntoConstraints="NO" id="SBR-1B-6tH">
+                                <rect key="frame" x="20" y="112" width="374" height="673.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wFT-Nf-gRp">
-                                        <rect key="frame" x="0.0" y="0.0" width="374" height="43"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                        <nil key="textColor"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="39.5"/>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="35"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <color key="highlightedColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wyb-mf-8l0">
-                                        <rect key="frame" x="0.0" y="120" width="374" height="302"/>
+                                        <rect key="frame" x="0.0" y="180.5" width="374" height="300"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gqC-lf-2ND">
-                                        <rect key="frame" x="0.0" y="499" width="374" height="75"/>
+                                        <rect key="frame" x="0.0" y="621.5" width="374" height="52"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="374" id="7tL-hn-JLC"/>
-                                            <constraint firstAttribute="height" constant="75" id="z4m-Tz-wgy"/>
+                                            <constraint firstAttribute="height" constant="52" id="1o5-oj-L8R"/>
+                                            <constraint firstAttribute="width" constant="374" id="ViZ-wL-hwc"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="FLIP">
                                             <backgroundConfiguration key="background">
                                                 <color key="backgroundColor" red="0.1886754923" green="0.71154387009999998" blue="0.31939258669999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </backgroundConfiguration>
-                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
+                                            <fontDescription key="titleFontDescription" name="ArialMT" family="Arial" pointSize="34"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
                                         <connections>
@@ -87,13 +87,22 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
-                            <constraint firstItem="ikh-g4-oRO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="43a-4M-Eb6"/>
-                            <constraint firstItem="SBR-1B-6tH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4Bz-Dn-c11"/>
-                            <constraint firstItem="SBR-1B-6tH" firstAttribute="top" secondItem="ikh-g4-oRO" secondAttribute="bottom" constant="69" id="8jq-kv-lvh"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SBR-1B-6tH" secondAttribute="bottom" constant="127" id="jwg-mj-luN"/>
-                            <constraint firstItem="ikh-g4-oRO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="lFF-bY-DJx"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ikh-g4-oRO" secondAttribute="trailing" constant="20" id="q84-3K-4LN"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SBR-1B-6tH" secondAttribute="trailing" constant="20" id="vdw-wC-kTr"/>
+                            <constraint firstItem="ikh-g4-oRO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="0vd-2d-Eks"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ikh-g4-oRO" secondAttribute="trailing" constant="20" id="6x5-Fw-x6F"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SBR-1B-6tH" secondAttribute="bottom" constant="76.5" id="8c7-Wa-I1z"/>
+                            <constraint firstItem="ikh-g4-oRO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="AMP-fH-vJE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SBR-1B-6tH" secondAttribute="trailing" constant="20" id="HjS-JS-PU1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SBR-1B-6tH" secondAttribute="trailing" constant="20" id="cP8-Lz-bU4"/>
+                            <constraint firstItem="SBR-1B-6tH" firstAttribute="top" secondItem="ikh-g4-oRO" secondAttribute="bottom" constant="20" id="ePR-5O-9xH"/>
+                            <constraint firstItem="SBR-1B-6tH" firstAttribute="top" secondItem="ikh-g4-oRO" secondAttribute="bottom" constant="20" id="feY-C2-TDI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SBR-1B-6tH" secondAttribute="bottom" constant="76.5" id="kcX-5y-GFW"/>
+                            <constraint firstItem="SBR-1B-6tH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mHl-To-m6a"/>
+                            <constraint firstItem="ikh-g4-oRO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pLG-sC-bGV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ikh-g4-oRO" secondAttribute="trailing" constant="20" id="qQM-Gi-wQo"/>
+                            <constraint firstItem="ikh-g4-oRO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="srd-T6-ztV"/>
+                            <constraint firstItem="SBR-1B-6tH" firstAttribute="top" secondItem="ikh-g4-oRO" secondAttribute="bottom" constant="20" id="uvt-Lf-8CZ"/>
+                            <constraint firstItem="SBR-1B-6tH" firstAttribute="top" secondItem="ikh-g4-oRO" secondAttribute="bottom" constant="20" id="wnQ-3S-sc7"/>
+                            <constraint firstItem="SBR-1B-6tH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="zJ3-vy-KYC"/>
                         </constraints>
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
