@@ -55,11 +55,11 @@ class SelectCoinViewController: UITableViewController{
     
     var flag = ["us.png", "de.png", "ca.png", "au.png", "jp.png", /*"uk.png", "se.png", "fr.png", "nz.png","dk.png", "nz.png", "at.png", "it.png", "lu.png", "sg.png", "es.png", "cn.png", "ie.png", "kr.png", "br.png", "th.png", "in.png", "pt.png", "ru.png", "il.png"*/]
     
-    let coin1 = Coin(heads: "us_front.png", tails: "us_back.png")
-    let coin2 = Coin(heads: "de_front.png", tails: "de_back.png")
-    let coin3 = Coin(heads: "ca_front.png", tails: "ca_back.png")
-    let coin4 = Coin(heads: "au_front.png", tails: "au_back.png")
-    let coin5 = Coin(heads: "jp_front.png", tails: "jp_back.png")
+    let coin1 = Coin(heads: "us_front.png", tails: "us_back.png", country: "us.png")
+    let coin2 = Coin(heads: "de_front.png", tails: "de_back.png", country: "de.png")
+    let coin3 = Coin(heads: "ca_front.png", tails: "ca_back.png", country: "ca.png")
+    let coin4 = Coin(heads: "au_front.png", tails: "au_back.png", country: "au.png")
+    let coin5 = Coin(heads: "jp_front.png", tails: "jp_back.png", country: "jp.png")
     
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{

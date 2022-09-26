@@ -14,6 +14,7 @@ class CoinViewController: UIViewController, CoinDelegate{
         // Do any additional setup after loading the view.
         image.image = UIImage(named: "img2.png")
         coinSide.text = " "
+        flag.image = UIImage(named: "")
         //flag.image = UIImage(named: "us.png")
     }
     
@@ -23,13 +24,15 @@ class CoinViewController: UIViewController, CoinDelegate{
     var obverseCount = 0
     var reverseCount = 0
     var coinFlipped = false
+    var setFlag = false
+    var flipCoinCount = 0
     
 
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var status: UILabel!
     @IBOutlet weak var coinButton: UIButton!
     @IBOutlet weak var coinSide: UILabel!
-    //@IBOutlet weak var flag: UIImageView!
+    @IBOutlet weak var flag: UIImageView!
     
     //MARK: Select new coin view controller
     @IBAction func changeCoin(_ sender: UIButton) {
@@ -38,17 +41,29 @@ class CoinViewController: UIViewController, CoinDelegate{
         present(coinVC, animated: true, completion: nil)
         
         image.image = UIImage(named: "img2.png")
-        coinSide.text = ""
+        coinSide.text = " "
     }
+    
+    func setFlagImage(country:String){
+        if setFlag == false{
+            flag.image = UIImage(named: country)
+        }
+    }
+    
     
     func changeImage(){
         image.image = UIImage(named: images[i])
         coinFlipped = true
+        
     }
     
     @IBAction func flipCoin(_ sender: Any) {
         i = Int.random(in: 0...1)
         changeImage()
+        if flipCoinCount == 0{
+            setFlagImage(country: "us.png")
+            flipCoinCount = 1
+        }
         
         
         if i == 0{
@@ -76,6 +91,7 @@ class CoinViewController: UIViewController, CoinDelegate{
     func getCoin(coin: Coin) {
         images[0] = coin.heads
         images[1] = coin.tails
+        flag.image = UIImage(named: coin.country)
     }
     
     
