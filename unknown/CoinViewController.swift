@@ -13,7 +13,8 @@ class CoinViewController: UIViewController, CoinDelegate{
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         image.image = UIImage(named: "img2.png")
-       // coinSide.text = " "
+        coinSide.text = " "
+        //flag.image = UIImage(named: "us.png")
     }
     
     var images = ["us_front.png", "us_back.png"]
@@ -27,14 +28,17 @@ class CoinViewController: UIViewController, CoinDelegate{
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var status: UILabel!
     @IBOutlet weak var coinButton: UIButton!
-    //@IBOutlet weak var coinSide: UILabel!
+    @IBOutlet weak var coinSide: UILabel!
+    //@IBOutlet weak var flag: UIImageView!
     
     //MARK: Select new coin view controller
     @IBAction func changeCoin(_ sender: UIButton) {
         let coinVC = storyboard?.instantiateViewController(withIdentifier: "selectCoin") as! SelectCoinViewController
         coinVC.coinDelegate = self
         present(coinVC, animated: true, completion: nil)
+        
         image.image = UIImage(named: "img2.png")
+        coinSide.text = ""
     }
     
     func changeImage(){
@@ -46,7 +50,7 @@ class CoinViewController: UIViewController, CoinDelegate{
         i = Int.random(in: 0...1)
         changeImage()
         
-        /*
+        
         if i == 0{
             coinSide.text = "Heads"
             obverseCount += 1
@@ -66,7 +70,7 @@ class CoinViewController: UIViewController, CoinDelegate{
         }
         else{
             reverseCount = 0
-        }*/
+        }
     }
     
     func getCoin(coin: Coin) {

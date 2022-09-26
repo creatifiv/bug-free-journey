@@ -78,6 +78,11 @@ class SelectCoinViewController: UITableViewController{
         
     }
     
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection
+                                section: Int) -> String? {
+       return "Select new coin"
+    }
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         coinDelegate?.getCoin(coin: coins[indexPath.row])
